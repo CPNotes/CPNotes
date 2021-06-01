@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample CSIR NET</title>
+	<link rel = "icon" href ="img/logo.png" type = "image/x-icon">
+
+
+	<!--popup -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+	<!--Footer-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!--FOoter-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/cpnotes.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+
+</head>
+<body>
+	<nav class="mynav">
+			<div class="mycontainer">
+					<div class="mylogo">
+							<a class="neonText" href="#" style="font-size: 5rem;"><img src="img/logo.png" alt="" style="width: 40px; height: auto;">CP Notes</a>
+					</div>
+					<div id="mymainListDiv" class="mymain_list">
+							<ul class="mynavlinks">
+									<li><a href="index.html"><i class="fa fa-home" style="color: red"></i>Home</a></li>
+									<li><a href="#"><i class="fa fa-user-circle" style="color: red"></i>About</a></li>
+									<li onclick="mappopup()"><a href="#"><i class="fa fa-map-marker" style="color: red"></i>Map</a></li>
+									<li onclick="contactpopup()"><a href="#"><i class="fa fa-phone" style="color: red"></i>Contact</a></li>
+							</ul>
+					</div>
+					<span class="mynavTrigger">
+							<i></i>
+							<i></i>
+							<i></i>
+					</span>
+			</div>
+	</nav>
+	<section class="myhome">
+	</section>
+
+	<div style="text-align: center; font-family: cursive; color: #000;">
+		<h2><u style="font-weight: 1000">चौधरी PHOTOSTAT</u><br>cpnotes.com</h2>
+		<p style="font-family: cursive;">Chaudhary Photostat at JIA SARAI near IIT Delhi<br>One stop solution for All Competitive Exam Handwritten Notes</p>
+	</div>
+<!-- Jquery needed -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script src="js/cpnotes.js"></script>
+
+<div class="row" style="padding-top: 50px">
+	  <div class="col-sm-4">
+	      <a href="sgate.html" ><div class="thumbnail">
+	              <img src="sample/jam/mathematicalstat.jpg" alt="Sample Image">
+	              <div class="caption">
+	                  <h3>Mathematical Statistics (MS)...</h3>
+	                  <p>Choose among the best available in the world.</p>
+	              </div>
+	          </div>
+	      </a>
+	  </div>
+
+	  <div class="col-sm-4">
+	      <a href="product_page.html" ><div class="thumbnail">
+	              <img src="sample/jam/mathematics.jpg" alt="Sample Image">
+	              <div class="caption">
+	                  <h3>Mathematics (MA)...</h3>
+	                  <p>Choose among the best available in the world.</p>
+	              </div>
+	          </div>
+	      </a>
+	  </div>
+
+	  <div class="col-sm-4">
+	      <a href="product_page.html" ><div class="thumbnail">
+	              <img src="sample/jam/physics.jpg" alt="Sample Image">
+	              <div class="caption">
+	                  <h3>Physics (PH)...</h3>
+	                  <p>Choose among the best available in the world.</p>
+	              </div>
+	          </div>
+	      </a>
+	  </div>
+	  <div class="col-sm-4">
+	      <a href="product_page.html" ><div class="thumbnail">
+	              <img src="sample/jam/economics.jpg" alt="Sample Image">
+	              <div class="caption">
+	                  <h3>Economics (ES)...</h3>
+	                  <p>Choose among the best available in the world.</p>
+	              </div>
+	          </div>
+	      </a>
+	  </div>
+	  <div class="col-sm-4">
+	      <a href="product_page.html" ><div class="thumbnail">
+	              <img src="sample/jam/chemistry.jpg" alt="Sample Image">
+	              <div class="caption">
+	                  <h3>Chemistry (CY)...</h3>
+	                  <p>Choose among the best available in the world.</p>
+	              </div>
+	          </div>
+	      </a>
+	  </div>
+	  <div class="col-sm-4">
+	      <a href="product_page.html" ><div class="thumbnail">
+	              <img src="sample/jam/geology.jpg" alt="Sample Image">
+	              <div class="caption">
+	                  <h3>Geology (GG)...</h3>
+	                  <p>Choose among the best available in the world.</p>
+	              </div>
+	          </div>
+	      </a>
+	  </div>
+	  <div class="col-sm-4">
+	      <a href="product_page.html" ><div class="thumbnail">
+	              <img src="sample/jam/biotechnology.jpg" alt="Sample Image">
+	              <div class="caption">
+	                  <h3>Biotechnology (BT)...</h3>
+	                  <p>Choose among the best available in the world.</p>
+	              </div>
+	          </div>
+	      </a>
+	  </div>
+
+	</div>
+	<!--Footer-->
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<footer id="dk-footer" class="navbar-footer dk-footer">
+	  <div class="container">
+	      <div class="row">
+	          <div class="col-md-12 col-lg-4">
+	              <div class="dk-footer-box-info">
+	                  <a href="index.html" class="footer-logo">
+	                      <img src="img/logo.png" alt="footer_logo" class="img-fluid" style="width: 50px; height: 60px;">
+	                  </a>
+	                  <p class="footer-info-text">
+	                     We provide all competitve handwritten notes for CSIR NET,NTA/NET, JAM, GATE, UPSC, SSC, JEE/NEET
+	                  </p>
+	                  <div class="footer-social-link">
+	                      <h3>Follow us</h3>
+	                      <ul>
+	                          <li>
+	                              <a href="#">
+	                                  <i class="fa fa-facebook"></i>
+	                              </a>
+	                          </li>
+	                          <li>
+	                              <a href="#">
+	                                  <i class="fa fa-twitter"></i>
+	                              </a>
+	                          </li>
+	                          <li>
+	                              <a href="#">
+	                                  <i class="fa fa-google-plus"></i>
+	                              </a>
+	                          </li>
+	                          <li>
+	                              <a href="#">
+	                                  <i class="fa fa-linkedin"></i>
+	                              </a>
+	                          </li>
+	                          <li>
+	                              <a href="#">
+	                                  <i class="fa fa-instagram"></i>
+	                              </a>
+	                          </li>
+	                      </ul>
+	                  </div>
+	                  <!-- End Social link -->
+	              </div>
+	              <!-- End Footer info -->
+	              <div class="footer-awarad">
+	                  <img src="img/logo.png" alt="">
+	                  <p><u>चौधरी Photostat</u></p>
+	              </div>
+	          </div>
+	          <!-- End Col -->
+	          <div class="col-md-12 col-lg-8">
+	              <div class="row">
+	                  <div class="col-md-6">
+	                      <div class="contact-us">
+	                          <div class="contact-icon">
+	                              <i class="fa fa-map-o" aria-hidden="true"></i>
+	                          </div>
+	                          <!-- End contact Icon -->
+	                          <div class="contact-info">
+	                              <h3>Delhi India</h3>
+	                              <p>Jia Sarai-IIT Delhi</p>
+	                          </div>
+	                          <!-- End Contact Info -->
+	                      </div>
+	                      <!-- End Contact Us -->
+	                  </div>
+	                  <!-- End Col -->
+	                  <div class="col-md-6">
+	                      <div class="contact-us contact-us-last">
+	                          <div class="contact-icon">
+	                              <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+	                          </div>
+	                          <!-- End contact Icon -->
+	                          <div class="contact-info">
+	                              <h3>98 1 890 9565</h3>
+	                              <p>Give us a call</p>
+	                          </div>
+	                          <!-- End Contact Info -->
+	                      </div>
+	                      <!-- End Contact Us -->
+	                  </div>
+	                  <!-- End Col -->
+	              </div>
+	              <!-- End Contact Row -->
+	              <div class="row">
+	                  <div class="col-md-12 col-lg-6">
+	                      <div class="footer-widget footer-left-widget">
+	                          <div class="section-heading">
+	                              <h3>Useful Links</h3>
+	                              <span class="animate-border border-black"></span>
+	                          </div>
+	                          <ul>
+	                              <li>
+	                                  <a href="#">About us</a>
+	                              </li>
+	                              <li>
+	                                  <a href="#">Services</a>
+	                              </li>
+	                              <li>
+	                                  <a href="#">Projects</a>
+	                              </li>
+	                              <li>
+	                                  <a href="#">Our Team</a>
+	                              </li>
+	                          </ul>
+	                          <ul>
+	                              <li>
+	                                  <a href="#">Contact us</a>
+	                              </li>
+	                              <li>
+	                                  <a href="#">Blog</a>
+	                              </li>
+	                              <li>
+	                                  <a href="#">Testimonials</a>
+	                              </li>
+	                              <li>
+	                                  <a href="#">Faq</a>
+	                              </li>
+	                          </ul>
+	                      </div>
+	                      <!-- End Footer Widget -->
+	                  </div>
+	                  <!-- End col -->
+	                  <div class="col-md-12 col-lg-6">
+	                      <div class="footer-widget">
+	                          <div class="section-heading">
+	                              <h3>Subscribe</h3>
+	                              <span class="animate-border border-black"></span>
+	                          </div>
+	                          <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+	                          Don’t miss to join us, kindly fill the form below.</p>
+	                          <form action="#">
+	                              <div class="form-row">
+	                                  <div class="col dk-footer-form">
+	                                      <input type="email" class="form-control" placeholder="Email Address" style="height: 46px;">
+	                                      <button type="submit">
+	                                          <i class="fa fa-send"></i>
+	                                      </button>
+	                                  </div>
+	                              </div>
+	                          </form>
+	                          <!-- End form -->
+	                      </div>
+	                      <!-- End footer widget -->
+	                  </div>
+	                  <!-- End Col -->
+	              </div>
+	              <!-- End Row -->
+	          </div>
+	          <!-- End Col -->
+	      </div>
+	      <!-- End Widget Row -->
+	  </div>
+	  <!-- End Contact Container -->
+
+
+	  <div class="copyright">
+	      <div class="container">
+	          <div class="row">
+	              <div class="col-md-6">
+	                  <span>Copyright © 2021, All Right Reserved</span>
+	              </div>
+	              <!-- End Col -->
+	              <div class="col-md-6">
+	                  <div class="copyright-menu">
+	                      <ul>
+	                          <li>
+	                              <a href="#">Home</a>
+	                          </li>
+	                          <li>
+	                              <a href="#">Terms</a>
+	                          </li>
+	                          <li>
+	                              <a href="#">Privacy Policy</a>
+	                          </li>
+	                          <li>
+	                              <a href="#">Contact</a>
+	                          </li>
+	                      </ul>
+	                  </div>
+	              </div>
+	              <!-- End col -->
+	          </div>
+	          <!-- End Row -->
+	      </div>
+	      <!-- End Copyright Container -->
+	  </div>
+	  <!-- End Copyright -->
+	  <!-- Back to top -->
+	  <div id="back-to-top" class="back-to-top">
+	      <button class="btn btn-dark" title="Back to Top" style="display: block;">
+	          <i class="fa fa-angle-up"></i>
+	      </button>
+	  </div>
+	  <!-- End Back to top -->
+	</footer>
+
+
+
+</body>
+</html>
