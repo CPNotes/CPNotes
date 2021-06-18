@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--popup -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <!--Footer-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--FOoter-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/cpnotes.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/payment.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+    <!--Title & Faviccon-->
+    <title>CP Notes Payment</title>
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
+
+  </head>
+  <body>
+    <nav class="mynav">
+  			<div class="mycontainer">
+  					<div class="mylogo">
+  							<a class="neonText" href="index.html" style="font-size: 5rem;"><img src="img/logo.png" alt="" style="width: 40px; height: auto;">CP Notes</a>
+  					</div>
+  					<div id="mymainListDiv" class="mymain_list">
+  							<ul class="mynavlinks">
+  									<li><a href="index.html"><i class="fa fa-home" style="color: red"></i>Home</a></li>
+  									<li><a href="#"><i class="fa fa-user-circle" style="color: red"></i>About</a></li>
+                    <li><a href="payment.html"><i class="fa fa-university" style="color: red"></i>Pay</a></li>
+  									<li onclick="mappopup()"><a href="#"><i class="fa fa-map-marker" style="color: red"></i>Map</a></li>
+  									<li onclick="contactpopup()"><a href="#"><i class="fa fa-phone" style="color: red"></i>Contact</a></li>
+  							</ul>
+  					</div>
+  					<span class="mynavTrigger">
+  							<i></i>
+  							<i></i>
+  							<i></i>
+  					</span>
+  			</div>
+  	</nav>
+
+    <section class="mybgimg"></section>
+
+    <div style="text-align: center; font-family: cursive; color: #000;">
+  		<h2><u style="font-weight: 1000">चौधरी PHOTOSTAT</u><br>cpnotes.com</h2>
+  		<p style="font-family: cursive;">Chaudhary Photostat at JIA SARAI near IIT Delhi<br>One stop solution for All Competitive Exam Handwritten Notes</p>
+  	</div>
+    <div style="color: #000; text-align: center;">
+      <h2 style=" font-size: 40px; font-weight: 1000"><u>चौधरी PHOTOSTAT</u>
+      <p>“I don’t love studying. I hate studying. I like learning. Learning is beautiful.”</p></h2>
+      <a><img src="img/logo.png" style="display: block; width:300px; height: 400px; margin-left: auto; margin-right: auto;"></a>
+      <h2 style="font-size: 40px; font-weight: 1000"><p>“An investment in knowledge pays the best interest.”</p></h2>
+    </div>
+
+    <div class="post"><h1 class="neonText post">All INDIA POST Available Here</h1></div>
+
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="img\payment\gpay.jpeg" alt="Sample Image">
+            <div class="caption">
+                <h3>G-Pay UPI - 9818909565</h3>
+                <p>Scan with any UPI scanner:- Paytm, PhonePay, G-Pay, BHIM UPI, Amazon-Pay.</p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <img src="img\payment\phonepay.jpeg" alt="Sample Image">
+            <div class="caption">
+                <h3>Phone-Pay UPI - 9818909565</h3>
+                <p>Scan with any UPI scanner:- Paytm, PhonePay, G-Pay, BHIM UPI, Amazon-Pay.</p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <img src="img\payment\bhim.jpeg" alt="Sample Image">
+            <div class="caption">
+                <h3>BHIM UPI - 9818909565</h3>
+                <p>Scan with any UPI scanner:- Paytm, PhonePay, G-Pay, BHIM UPI, Amazon-Pay.</p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <img src="img\payment\amazonpay.jpeg" alt="Sample Image">
+            <div class="caption">
+                <h3>Amazon-Pay UPI - 9818909565</h3>
+                <p>Scan with any UPI scanner:- Paytm, PhonePay, G-Pay, BHIM UPI, Amazon-Pay.</p>
+            </div>
+        </div>
+      </div>
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="js/cpnotes.js"></script>
+
+<!-- Footer -->
+<footer id="dk-footer" class="navbar-footer dk-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-4">
+                <div class="dk-footer-box-info">
+                    <a href="cpnotes.html" class="footer-logo">
+                        <img src="img/logo.png" alt="footer_logo" class="img-fluid" style="width: 50px; height: 60px;">
+                    </a>
+                    <p class="footer-info-text">
+                       We provide all competitve handwritten notes for CSIR NET,NTA/NET, JAM, GATE, UPSC, SSC, JEE/NEET
+                    </p>
+                    <div class="footer-social-link">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Social link -->
+                </div>
+                <!-- End Footer info -->
+                <div class="footer-awarad">
+                    <img src="img/logo.png" alt="">
+                    <p><u>चौधरी Photostat</u></p>
+                </div>
+            </div>
+            <!-- End Col -->
+            <div class="col-md-12 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-us">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-o" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3>Delhi India</h3>
+                                <p>Jia Sarai-IIT Delhi</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-6">
+                        <div class="contact-us contact-us-last">
+                            <div class="contact-icon">
+                                <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                            </div>
+                            <!-- End contact Icon -->
+                            <div class="contact-info">
+                                <h3>98 1 890 9565</h3>
+                                <p>Give us a call</p>
+                            </div>
+                            <!-- End Contact Info -->
+                        </div>
+                        <!-- End Contact Us -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Contact Row -->
+                <div class="row">
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget footer-left-widget">
+                            <div class="section-heading">
+                                <h3>Useful Links</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#">Our Team</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a href="#">Faq</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Widget -->
+                    </div>
+                    <!-- End col -->
+                    <div class="col-md-12 col-lg-6">
+                        <div class="footer-widget">
+                            <div class="section-heading">
+                                <h3>Subscribe</h3>
+                                <span class="animate-border border-black"></span>
+                            </div>
+                            <p><!-- Don’t miss to subscribe to our new feeds, kindly fill the form below. -->
+                            Don’t miss to join us, kindly fill the form below.</p>
+                            <form action="#">
+                                <div class="form-row">
+                                    <div class="col dk-footer-form">
+                                        <input type="email" class="form-control" placeholder="Email Address" style="height: 46px;">
+                                        <button type="submit">
+                                            <i class="fa fa-send"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- End form -->
+                        </div>
+                        <!-- End footer widget -->
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Col -->
+        </div>
+        <!-- End Widget Row -->
+    </div>
+    <!-- End Contact Container -->
+
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>Copyright © 2021, All Right Reserved</span>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6">
+                    <div class="copyright-menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End col -->
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- End Copyright Container -->
+    </div>
+    <!-- End Copyright -->
+    <!-- Back to top -->
+    <div id="back-to-top" class="back-to-top">
+        <button onclick="scrollToTop()" id="scrollToTopBtn" class="btn btn-dark" title="Back to Top" style="display: block;">☝️</button>
+    </div>
+    <!-- End Back to top -->
+  </footer>
+
+  </body>
+</html>
