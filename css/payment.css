@@ -1,8 +1,8 @@
 .caption{
   color: black;
 }
-.col-sm-3{
-  border: 3px solid #ddd;
+.thumbnail{
+  border: 5px solid #ddd;
 }
 .mybgimg {
     width: 100%;
