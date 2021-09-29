@@ -106,12 +106,12 @@ body{
 .swal2-popup.swal2-modal.swal2-icon-info.swal2-show {
     font-size: 2rem;
 }
-button.swal2-cancel.swal2-styled {
+/* button.swal2-cancel.swal2-styled {
   background-color: #2612e6;
 }
 button.swal2-confirm.swal2-styled {
   background-color: #2612e6;
-}
+} */
 
 /* Media qurey section */
 
