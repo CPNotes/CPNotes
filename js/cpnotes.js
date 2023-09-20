@@ -57,7 +57,7 @@ function mappopup(){
    
    
    //cancelButtonText: '<li nopopup()><a href="https://www.google.com/maps/dir//CP+Notes/@28.6171871,76.9471246,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d0507d0875345:0x3a699e1fed1cbf5b!2m2!1d77.0171649!2d28.6172051" target="_blank" style="color: white;">Dwarka Mor</a></li>',
-   cancelButtonText: '<a href="https://www.google.com/maps/dir//CP+Notes/@28.6171871,76.9471246,12zdata=!4m8!4m7!1m0!1m5!1m1!1s0x390d0507d0875345:0x3a699e1fed1cbf5b!2m2!1d77.0171649!2d28.6172051" target="_blank" style="color: white;">Dwarka Mor</a>',
+   cancelButtonText: '<a href="https://www.google.com/maps/place/CP+Notes/@28.6172297,77.0144589,17z/data=!3m1!4b1!4m6!3m5!1s0x390d0507d0875345:0x3a699e1fed1cbf5b!8m2!3d28.6172297!4d77.0170338!16s%2Fg%2F11kfbvld_z?entry=ttu" target="_blank" style="color: white;">Dwarka Mor</a>',
    reverseButtons: true
     })
 .then((result) => {
